@@ -15,7 +15,11 @@ def ceaser(message, key):
 
     print("The encrypted message is:", encrypted_message)
 
-
-shift = int(input('Shift value: '))
+while True:
+    try:
+        shift = int(input('Shift value: '))
+        break
+    except ValueError:
+        print('Your shift value must be an integer.')
 text = input("Your message: ")
 ceaser(text, shift)
