@@ -21,5 +21,5 @@ while True:
         break
     except ValueError:
         print('Your shift value must be an integer.')
-text = input("Your message: ")
+text = input("Your message: ").lower()
 ceaser(text, shift)
